@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Запись в салон онлайн</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Unbounded:wght@500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><div class="w">
+<a class="logo" href="#top" id="brand">Beauty Studio</a>
+<div class="links"><a href="#services">Услуги</a><a href="#masters">Мастера</a><a href="#reviews">Отзывы</a><a href="#faq">Вопросы</a></div>
+<a class="btn" href="#book">Записаться</a>
+</div></nav>
+
+<header class="hero" id="top"><div class="w">
+<div>
+<div class="sw" role="group" aria-label="Тип бизнеса" id="sw"></div>
+<h1 id="h1"></h1>
+<p class="lead" id="lead"></p>
+<div class="cta"><a class="btn" href="#book">Выбрать время</a><a class="btn o" href="#services">Цены на услуги</a></div>
+</div>
+<div class="art" aria-hidden="true"><div class="badge"><span><b id="bt">Ближайшее окно</b><span id="bs"></span></span><b>Свободно</b></div></div>
+</div></header>
+
+<section id="services"><div class="w">
+<h2>Услуги и цены</h2><p class="sub">Цены без сюрпризов: что видите здесь, то и платите. Нажмите «Выбрать», и услуга попадёт в форму записи.</p>
+<div class="grid" id="sv"></div>
+</div></section>
+
+<section id="masters"><div class="w">
+<h2>Мастера</h2><p class="sub">Выберите того, к кому хотите, или оставьте на усмотрение студии.</p>
+<div class="ms" id="ms"></div>
+</div></section>
+
+<section id="book"><div class="w">
+<h2>Онлайн-запись</h2><p class="sub">Занимает полминуты. Занятое время закрыто автоматически, двойных записей не бывает.</p>
+<div class="bk">
+<div class="col">
+<div><label class="fl" for="fs">Услуга</label><select id="fs"></select></div>
+<div><label class="fl" for="fm">Мастер</label><select id="fm"></select></div>
+<div><span class="fl">Дата</span><div class="chips" id="fd"></div></div>
+<div><span class="fl">Время</span><div class="chips" id="ft"></div></div>
+</div>
+<div class="col">
+<div class="sum" id="sum"></div>
+<div><label class="fl" for="nm">Ваше имя</label><input id="nm" autocomplete="name"></div>
+<div><label class="fl" for="ph">Телефон</label><input id="ph" type="tel" inputmode="tel" placeholder="+7 7__ ___ __ __" autocomplete="tel"></div>
+<div class="err" id="er" role="alert"></div>
+<button class="btn" id="go" style="width:100%">Подтвердить запись</button>
+<div class="ok" id="ok" role="status"></div>
+</div>
+</div>
+</div></section>
+
+<section id="reviews"><div class="w">
+<h2>Отзывы клиентов</h2><p class="sub">&nbsp;</p>
+<div class="rv" id="rv"></div>
+</div></section>
+
+<section id="faq"><div class="w" style="max-width:760px">
+<h2>Частые вопросы</h2>
+<details><summary>Как отменить или перенести запись?</summary><p>Позвоните или напишите нам за 3 часа до визита — время освободится для других клиентов.</p></details>
+<details><summary>Нужна ли предоплата?</summary><p>Нет. Платите после услуги: наличными, картой или переводом.</p></details>
+<details><summary>Что если я опаздываю?</summary><p>Предупредите нас. Мы подождём до 15 минут, дальше услугу придётся сократить.</p></details>
+<details><summary>Приходят ли напоминания о записи?</summary><p>Да, мы отправим сообщение накануне и за 2 часа до визита.</p></details>
+</div></section>
+
+<footer><div class="w"><span id="addr">г. Актобе, ул. Абулхаир хана, 40 · ежедневно 10:00–21:00</span><span>+7 700 000 00 00 · @your_studio</span></div></footer>
+
+<button class="btn fab" id="adm-btn" aria-expanded="false">Панель мастера</button>
+<aside id="adm" aria-label="Список записей"><h3 style="font-size:18px;margin-bottom:8px">Записи клиентов</h3><div id="al"></div></aside>
+
+<script src="script.js"></script>
+</body>
+</html>
